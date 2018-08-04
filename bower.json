@@ -1,0 +1,21 @@
+{
+  "name": "site",
+  "homepage": "https://github.com/ericksvasc/criando-um-site",
+  "authors": [
+    "ericksvasc <ericksvasc@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  }
+}
