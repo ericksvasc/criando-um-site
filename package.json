@@ -16,7 +16,9 @@
     "url": "https://github.com/ericksvasc/criando-um-site/issues"
   },
   "homepage": "https://github.com/ericksvasc/criando-um-site#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.2.0"
+  },
   "devDependencies": {
     "bootstrap-sass": "^3.3.7",
     "breakpoint-sass": "^2.7.1",
