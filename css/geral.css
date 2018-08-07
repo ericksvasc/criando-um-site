@@ -53,6 +53,33 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.pequeno {
+  padding: 7px;
+  font-size: 18px;
+  font-size: 1.125rem; }
+
+.medio {
+  padding: 9px;
+  font-size: 20px;
+  font-size: 1.25rem; }
+
+.grande {
+  padding: 11px;
+  font-size: 22px;
+  font-size: 1.375rem; }
+
+.botao {
+  border: 2px solid #000;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700; }
+  .botao:hover {
+    border-color: #31b1e7;
+    color: #31b1e7; }
+  .botao:focus {
+    border-color: #9ad15e;
+    color: #9ad15e; }
+
 header {
   min-height: 425px;
   position: relative;
@@ -138,6 +165,87 @@ header {
     color: white;
     text-align: center;
     text-transform: uppercase; }
+
+.menu-responsivo {
+  position: fixed;
+  width: 150px;
+  height: 100%;
+  left: -150px;
+  top: 0;
+  background-color: #31b1e7;
+  background-image: -webkit-gradient(linear, 0deg, from(#9ad15e), to(#31b1e7));
+  background-image: -webkit-linear-gradient(0deg, #9ad15e, #31b1e7);
+  background-image: -moz-linear-gradient(0deg, #9ad15e, #31b1e7);
+  background-image: -ms-linear-gradient(0deg, #9ad15e, #31b1e7);
+  background-image: -o-linear-gradient(0deg, #9ad15e, #31b1e7);
+  background-image: linear-gradient(0deg, #9ad15e, #31b1e7);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#9ad15e', EndColorStr='#31b1e7'); }
+  .menu-responsivo.ativo {
+    left: 0; }
+  .menu-responsivo ul li {
+    border-bottom: 1px solid white; }
+    .menu-responsivo ul li a {
+      padding: 7px;
+      display: block;
+      color: white; }
+      .menu-responsivo ul li a:hover, .menu-responsivo ul li a:focus {
+        background-color: rgba(0, 0, 0, 0.4); }
+
+.menu-responsivo.ativo {
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
+
+.layout.ativo {
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  padding-left: 150px; }
+
+.toggle {
+  width: 35px;
+  height: 65px;
+  float: right;
+  position: relative;
+  overflow: hidden; }
+  .toggle:hover span:nth-child(1) {
+    top: 6px; }
+  .toggle:hover span:nth-child(3) {
+    top: 20px; }
+  .toggle.ativo span:nth-child(1) {
+    top: 15px;
+    -webkit-transform: rotate(48deg);
+    -ms-transform: rotate(48deg);
+    -o-transform: rotate(48deg);
+    transform: rotate(48deg); }
+  .toggle.ativo span:nth-child(2) {
+    display: none; }
+  .toggle.ativo span:nth-child(3) {
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    top: 14px; }
+  .toggle span {
+    width: 100%;
+    height: 2px;
+    content: " ";
+    display: block;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
+    .toggle span:nth-child(1) {
+      top: 4px; }
+    .toggle span:nth-child(2) {
+      top: 13px; }
+    .toggle span:nth-child(3) {
+      top: 22px; }
 
 footer {
   background-color: transparent;

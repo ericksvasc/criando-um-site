@@ -11,87 +11,117 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
-	<header>
-		<div class="container">
-			<div class="logo">
-				<a href="index.html">
-					<img src="img/logo svg.svg" alt="Logo Topo Tag">
-				</a>
-			</div>
-
-			<div class="links">
-
-				<nav>
-					<ul>
-						<li><a href="index.html">Início</a></li>
-						<li><a href="#">Sobre</a></li>
-						<li><a href="#">Portifólio</a></li>
-						<li><a href="#">Contato</a></li>
-					</ul>
-				</nav>
-
-				<ul class="social">
-					<li>
-						<a href="#"><i class="fab fa-facebook-f"></i></a>
-					</li>
-
-					<li>
-						<a href=""><i class="fab fa-github-alt"></i></a>
-					</li>
-				</ul>
-
-			</div>
-
-			<h1><strong>Erick</strong> S. <strong>Vasconcelos</strong></h1>
-
-			<p>Code // Share // Reboot</p>
-
-		</div>
-	
-	</header>
-	<main>
-		<section class="sobre">
+	<nav class="menu-responsivo">
+		<ul>
+			<li><a href="index.html">Início</a></li>
+			<li><a href="#">Sobre</a></li>
+			<li><a href="#">Portifólio</a></li>
+			<li><a href="#">Contato</a></li>
+		</ul>
+	</nav>
+	<div class="layout">
+		<header>
 			<div class="container">
-				<div class="itens">
-					
-					<div class="foto">
-						<img src="img/foto-do-meio.png" alt="Foto do Centro">
-					</div>
-
-					<div class="icone-lapis">
-						<i class="fas fa-pencil-alt"></i>
-					</div>
-
-					<div class="icone-codico">
-						<i class="fa fa-code"></i>
-					</div>
-
-					<div class="icone-coracao">
-						<i class="fa fa-heart"></i>
-					</div>
-
-					<div class="icone-compartilhar"><i class="fa fa-share-alt"></i></div>
+				<div class="logo">
+					<a href="index.html">
+						<img src="img/logo svg.svg" alt="Logo Topo Tag">
+					</a>
 				</div>
 
-				<div class="textos">
-					<p><strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit. Soluta iure praesentium totam quae cumque, asperiores architecto impedit eos. Incidunt sapiente dolor libero assumenda laborum molestiae, nam eius reiciendis beatae! Cupiditate.</p>
+				<div class="links">
 
-					<a href="#" class="botao medio"><i class="fa fa-eye"></i>Continue Lendo</a>
+					<nav>
+						<ul>
+							<li><a href="index.html">Início</a></li>
+							<li><a href="#">Sobre</a></li>
+							<li><a href="#">Portifólio</a></li>
+							<li><a href="#">Contato</a></li>
+						</ul>
+					</nav>
+
+					<a class="toggle" href="javascript:;">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+
+					<ul class="social">
+						<li>
+							<a href="#"><i class="fab fa-facebook-f"></i></a>
+						</li>
+
+						<li>
+							<a href=""><i class="fab fa-github-alt"></i></a>
+						</li>
+					</ul>
+
 				</div>
+
+				<h1><strong>Erick</strong> S. <strong>Vasconcelos</strong></h1>
+
+				<p>Code // Share // Reboot</p>
 
 			</div>
-		</section>
-	</main>
-	
-	<footer>
-		<div class="logo-rodape">
-			<a href="index.html">
-				<img src="img/logo rodape.svg" alt="Logo Rodape">
-			</a>
+		
+		</header>
+		<main>
+			<section class="sobre">
+				<div class="container">
+					<div class="itens">
+						
+						<div class="foto">
+							<img src="img/foto-do-meio.png" alt="Foto do Centro">
+						</div>
 
-			<p>2018 Todos os Direitos Reservados</p>
+						<div class="icone-lapis">
+							<i class="fas fa-pencil-alt"></i>
+						</div>
 
-		</div>
-	</footer>
+						<div class="icone-codico">
+							<i class="fa fa-code"></i>
+						</div>
+
+						<div class="icone-coracao">
+							<i class="fa fa-heart"></i>
+						</div>
+
+						<div class="icone-compartilhar"><i class="fa fa-share-alt"></i></div>
+					</div>
+
+					<div class="textos">
+						<p><strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit. Soluta iure praesentium totam quae cumque, asperiores architecto impedit eos. Incidunt sapiente dolor libero assumenda laborum molestiae, nam eius reiciendis beatae! Cupiditate.</p>
+
+						<a href="#" class="botao medio"><i class="fa fa-eye"></i>Continue Lendo</a>
+					</div>
+
+				</div>
+			</section>
+		</main>
+		
+		<footer>
+			<div class="logo-rodape">
+				<a href="index.html">
+					<img src="img/logo rodape.svg" alt="Logo Rodape">
+				</a>
+
+				<p>2018 Todos os Direitos Reservados</p>
+
+			</div>
+		</footer>
+	</div>
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script>
+		$(function(){
+			
+			$('.toggle').click(function(){
+				$('.layout').toggleClass('ativo');
+				$('.menu-responsivo').toggleClass('ativo');
+				$(this).toggleClass('ativo');
+			});
+		});
+	</script>
+
 </body>
 </html>
+	
