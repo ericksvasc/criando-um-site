@@ -116,26 +116,33 @@ section.sobre .itens {
       -ms-flex-order: 5;
       order: 5; }
 
-section.sobre .textos {
+.textos {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  align-items: center; }
+  text-align: center; }
   @media (min-width: 768px) {
-    section.sobre .textos {
+    .textos {
       float: left;
       width: 66.66667%; } }
   @media (min-width: 768px) {
-    section.sobre .textos {
+    .textos {
       margin-left: 16.66667%; } }
-  section.sobre .textos p {
+  .textos p {
     font-size: 30px;
     font-size: 1.875rem; }
-  section.sobre .textos .botao {
+  .textos .botao {
     display: table;
     margin: 30px auto; }
+
+.ma {
+  margin-right: 10px; }
+
+header {
+  background-image: url("../img/fundo-do-slide.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-attachment: fixed;
+  background-size: cover; }

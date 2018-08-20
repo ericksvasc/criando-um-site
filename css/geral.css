@@ -82,13 +82,7 @@ table {
 
 header {
   min-height: 425px;
-  position: relative;
-  background-image: url("../img/fundo-do-slide.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-color: #000;
-  background-attachment: fixed;
-  background-size: cover; }
+  position: relative; }
   header:before, header:after {
     content: " ";
     display: table; }

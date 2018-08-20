@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+	<meta charset="UTF-8">
+	<title>apredendo a criar um site</title>
+	<link rel="stylesheet" href="css/geral.css">
+	<link rel="stylesheet" href="css/sobre.css">
+	<link rel="stylesheet" href="css/plugins.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+	<nav class="menu-responsivo">
+		<ul>
+			<li><a href="index.html">Início</a></li>
+			<li><a href="sobre.html">Sobre</a></li>
+			<li><a href="portifolio.html">Portifólio</a></li>
+			<li><a href="contato.html">Contato</a></li>
+		</ul>
+	</nav>
+	<div class="layout">
+		<header>
+			<div class="container">
+				<div class="logo">
+					<a href="index.html">
+						<img src="img/logo svg.svg" alt="Logo Topo Tag">
+					</a>
+				</div>
+
+				<div class="links">
+
+					<nav>
+						<ul>
+							<li><a href="index.html">Início</a></li>
+							<li><a href="sobre.html">Sobre</a></li>
+							<li><a href="#">Portifólio</a></li>
+							<li><a href="#">Contato</a></li>
+						</ul>
+					</nav>
+
+					<a class="toggle" href="javascript:;">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+
+					<ul class="social">
+						<li>
+							<a href="#"><i class="fab fa-facebook-f"></i></a>
+						</li>
+
+						<li>
+							<a href="https://github.com/ericksvasc/criando-um-site/"><i class="fab fa-github-alt"></i></a>
+						</li>
+					</ul>
+
+				</div>
+
+				<h1><strong>Quem</strong> Sou <strong> Eu </strong></h1>
+
+				<p>Lorem ipsum dolor sit amet.</p>
+
+			</div>
+		
+		</header>
+		<main>
+			<section class="sobre">
+				<div class="container">
+					<div class="textos">
+						<p><strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit. Soluta iure praesentium totam quae cumque, asperiores architecto impedit eos. Incidunt sapiente dolor libero assumenda laborum molestiae, nam eius reiciendis beatae! Cupiditate.</p>
+					</div>
+
+					<ul class="habilidades">
+						<li class="habilidade-8">
+							<h2><i class="fab fa-html5"></i> <strong> HTML5  </strong> // 80%
+								<div class="barra"><span></span></div></h2>
+						</li>
+						<li class="habilidade-7">
+							<h2><i class="fab fa-css3"></i> <strong> CSS3 </strong> // 70 %
+								<div class="barra"><span></span></div></h2>
+						</li>
+						<li class="habilidade-3">
+							<h2><i class="fab fa-wordpress"></i> <strong> Wordpress </strong> // 30%
+								<div class="barra"><span></span></div></h2>
+						</li>
+						<li class="habilidade-4">
+							<h2><i class="fab fa-git"></i> <strong> Git </strong> // 40% 
+								<div class="barra"><span></span></div></h2>
+						</li>
+					</ul>
+
+					<a href="#" class="botao medio"><i class="far fa-image"></i>Acessar Portifolio</a>
+
+				</div>
+			</section>
+		</main>
+		
+		<footer>
+			<div class="logo-rodape">
+				<a href="index.html">
+					<img src="img/logo rodape.svg" alt="Logo Rodape">
+				</a>
+
+				<p>2018 Todos os Direitos Reservados</p>
+
+			</div>
+		</footer>
+	</div>
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script>
+		$(function(){
+			
+			$('.toggle').click(function(){
+				$('.layout').toggleClass('ativo');
+				$('.menu-responsivo').toggleClass('ativo');
+				$(this).toggleClass('ativo');
+			});
+		});
+	</script>
+
+</body>
+</html>
+	
