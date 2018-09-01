@@ -27,6 +27,7 @@
     "bootstrap-sass": "^3.3.7",
     "breakpoint-sass": "^2.7.1",
     "bootstrap": "^4.1.3",
-    "imagehover.css": "*"
+    "imagehover.css": "*",
+    "wow": "wowjs#^1.1.2"
   }
 }

@@ -5,6 +5,7 @@
 	<title>apredendo a criar um site</title>
 	<link rel="stylesheet" href="css/geral.css">
 	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
 	<link rel="stylesheet" href="css/plugins.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -17,25 +18,26 @@
 			<li><a href="sobre.html">Sobre</a></li>
 			<li><a href="portifolio.html">Portifólio</a></li>
 			<li><a href="contato.html">Contato</a></li>
+			
 		</ul>
 	</nav>
 	<div class="layout">
 		<header>
 			<div class="container">
-				<div class="logo">
+				<div class="logo wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5">
 					<a href="index.html">
 						<img src="img/logo svg.svg" alt="Logo Topo Tag">
 					</a>
 				</div>
 
-				<div class="links">
+				<div class="links wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
 
 					<nav>
 						<ul>
 							<li><a href="index.html">Início</a></li>
 							<li><a href="sobre.html">Sobre</a></li>
 							<li><a href="portifolio.html">Portifólio</a></li>
-							<li><a href="#">Contato</a></li>
+							<li><a href="contato.html">Contato</a></li>
 						</ul>
 					</nav>
 
@@ -57,9 +59,11 @@
 
 				</div>
 
-				<h1><strong>Erick</strong> S. <strong>Vasconcelos</strong></h1>
+				<div class="wow fadeIn"  data-wow-duration="1.5s" data-wow-delay="0.3s">
+					<h1><strong>Erick</strong> S. <strong>Vasconcelos</strong></h1>
 
-				<p>Code // Share // Reboot</p>
+					<p>Code // Share // Reboot</p>
+				</div>
 
 			</div>
 		
@@ -69,23 +73,23 @@
 				<div class="container">
 					<div class="itens">
 						
-						<div class="foto">
+						<div class="foto wow fadeIn"  data-wow-duration="2s" data-wow-delay="0.3s">
 							<img src="img/foto-do-meio.png" alt="Foto do Centro">
 						</div>
 
-						<div class="icone-lapis">
+						<div class="icone-lapis wow slideInLeft"  data-wow-duration="2s" data-wow-delay="0.3s">
 							<i class="fas fa-pencil-alt"></i>
 						</div>
 
-						<div class="icone-codico">
+						<div class="icone-codico wow fadeIn"  data-wow-duration="2s" data-wow-delay="0.3s">
 							<i class="fa fa-code"></i>
 						</div>
 
-						<div class="icone-coracao">
+						<div class="icone-coracao wow fadeIn"  data-wow-duration="2s" data-wow-delay="0.3s">
 							<i class="fa fa-heart"></i>
 						</div>
 
-						<div class="icone-compartilhar"><i class="fa fa-share-alt"></i></div>
+						<div class="icone-compartilhar wow slideInRight"  data-wow-duration="2s" data-wow-delay="0.3s"><i class="fa fa-share-alt"></i></div>
 					</div>
 
 					<div class="textos">
@@ -99,18 +103,22 @@
 		</main>
 		
 		<footer>
-			<div class="logo-rodape">
-				<a href="index.html">
-					<img src="img/logo rodape.svg" alt="Logo Rodape">
-				</a>
+			<div class="wow rotateIn" data-wow-duration="1s" data-wow-delay="0.2s">
+				<div class="logo-rodape">
+					<a href="index.html">
+						<img src="img/logo rodape.svg" alt="Logo Rodape">
+					</a>
+				</div>
+			</div>	
 
 				<p>2018 Todos os Direitos Reservados</p>
 
-			</div>
+			
 		</footer>
 	</div>
 
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/wow/dist/wow.min.js"></script>
 	<script>
 		$(function(){
 			
@@ -119,8 +127,10 @@
 				$('.menu-responsivo').toggleClass('ativo');
 				$(this).toggleClass('ativo');
 			});
+			new WOW().init();
 		});
 	</script>
+
 
 </body>
 </html>
