@@ -72,7 +72,11 @@ table {
   border: 2px solid #000;
   color: #000;
   text-transform: uppercase;
-  font-weight: 700; }
+  font-weight: 700;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
   .botao:hover {
     border-color: #31b1e7;
     color: #31b1e7; }
